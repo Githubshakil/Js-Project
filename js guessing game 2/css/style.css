@@ -1,0 +1,141 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.main {
+    width: 800px;
+    padding: 20px 30px;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 400px;
+    
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: rgb(87, 66, 14);
+    color: goldenrod;
+    font-weight: 800;
+}
+
+input {
+    padding: 10px;
+    border-color: goldenrod;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+
+.playertwoinput {
+    display: none;
+}
+
+.playertwobutton {
+    display: none;
+}
+.playerthreeinput {
+    display: none;
+}
+
+.playerthreebutton {
+    display: none;
+}
+.playerfourinput {
+    display: none;
+}
+
+.playerfourbutton {
+    display: none;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+}
+
+h2 {
+    margin: 10px 50px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+    display: none;
+}
+
+img {
+    display: none;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.error {
+    font-size: 30px;
+
+
+}
+.type{
+    font-size: 50px;
+     position: relative;
+    display: inline-block;
+    color: beige;
+    bottom: 200px;
+    
+}
+.type::after{
+    width: 2px;
+    height: 100%;
+    background: beige;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    animation: blink .5s linear infinite;
+}
+@keyframes blink{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+.reset {
+    border: none;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-left: 40%;
+    display: none;
+}
+
+.reset:hover {
+    background-color: rgb(87, 66, 14);
+    color: goldenrod;
+    font-weight: 800;
+}

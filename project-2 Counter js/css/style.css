@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aquamarine;
+    
+}
+.count_heading {
+    text-align: center;
+    margin-top: 200px ;
+}
+.count_heading h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 200px;
+}
+.counter{
+    padding: 15px 25px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    font-size: 50px;
+
+}
