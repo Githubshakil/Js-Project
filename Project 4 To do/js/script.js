@@ -24,6 +24,7 @@ function displayUpdate() {
       textoutput.innerHTML += `<p> ${task}</p>`;
     });
 
+   
 
     let clearbutton = document.querySelectorAll(".clear_btn")
 
