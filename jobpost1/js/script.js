@@ -6,21 +6,33 @@ const users = [
     { id: 5, name: "Eve", age: 40, isActive: false, scores: [80, 85, 88] }
 ];
 
-function displayUsers(users) {
-    const usersDiv = document.getElementById('users');
-    usersDiv.innerHTML = '';
-    users.forEach(user => {
-        const userDiv = document.createElement('div');
-        userDiv.className = 'user';
-        userDiv.innerHTML = `<h2>${user.name} (Age: ${user.age})</h2>
-                             <p>ID: ${user.id}</p>
-                             <p>Active: ${user.isActive ? 'Yes' : 'No'}</p>
-                             <p>Scores: ${user.scores.join(', ')}</p>`;
-        usersDiv.appendChild(userDiv);
-    });
-}
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    displayUsers(users);
-});
+
+
+
+function process(){
+    let activeUsers = users.filter(user=>user.isActive == true);
+   activeUsers.map(user=>{
+    let total = user.scores.reduce((a,b)=>a+b,0);
+    let average = total/user.scores.length;
+    user.averageScore = average
+    
+    
+ })
+
+   let topper = activeUsers.reduce((a,b)=>a.averageScore > b.averageScore ? a : b)
+   
+   let ageGroups ={
+    under30:users.filter(user=>user.age<30),
+    over30: users.filter(user=>user.age>=30)
+   }
+   return{
+    activeUsers:activeUsers,
+    topPerformer:topper,
+    agegroup:ageGroups
+
+
+   }
+}
+console.log(process());
+
