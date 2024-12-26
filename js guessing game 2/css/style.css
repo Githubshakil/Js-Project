@@ -109,7 +109,7 @@ img {
     height: 100%;
     background: beige;
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     content: "";
     animation: blink .5s linear infinite;
