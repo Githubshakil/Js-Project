@@ -19,6 +19,7 @@ function calculateBonuses(employees) {
     
     if (employee.tasksCompleted >= 40 && employee.rating >= 4.0) {
       let bonus = employee.tasksCompleted * 10;
+      console.log();
       results.push({
         id: employee.id,
         name: employee.name,
@@ -33,4 +34,6 @@ function calculateBonuses(employees) {
 let bonuses = calculateBonuses(employees);
 
 console.log("employee bonuses:", bonuses);
+
+
 
