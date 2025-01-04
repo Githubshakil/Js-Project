@@ -308,12 +308,12 @@ window.onload = function () {
                 let pluginRunSpeed = item.dataset.speed
                 if (pluginName === "counterup") {
                     let counterNumber = item.innerHTML
-                    let countstartPoint = 0
+                    let countstartPoint = 100
 
                     function countRunner() {
 
-                        item.innerHTML = countstartPoint++
-                        if (countstartPoint > Number(counterNumber)) {
+                        item.innerHTML = countstartPoint--
+                        if (countstartPoint < Number(0)) {
                             clearInterval(stop)
                         }
                     }
